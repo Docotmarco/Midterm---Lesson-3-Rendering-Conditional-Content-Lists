@@ -4,10 +4,12 @@ const app = Vue.createApp({
           entergoalvalue:'',
           goals: [],
           toggler: 'Hide',
-          toggle_btn: false,
-         
+          toggle_btn: false,   
      };
     },
+methods:{
+    
+}
 });
   
 app.mount('#user-goals');
