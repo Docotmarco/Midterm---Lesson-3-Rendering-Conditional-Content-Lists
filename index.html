@@ -22,8 +22,11 @@
       <button  @click="add_goal">Add Goal</button>
       <p v-if="goals.length=== 0">No goals have been added yet - please start adding some!</p>
       <ul  v-else v-show="toggle_btn === false">
-        <li v-for="goal in goals" :key="goal">Goal</li>
+        <li v-for="goal in goals" :key="goal">{{goal}}</li>
       </ul>
+      <br>
+      <br>
+      <button @click="tog_btn">{{toggler}}</button>
     </section>
   </body>
 </html>
